@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUESSING THE NUMBERSSS</title>
+	<script type="text/javascript">
+		function Randomcheck()
+		{
+			var min=1; 
+			var max=15; 
+			var random = 
+			
+			 Math.floor((Math.random() * 15) + 1); 
+			//document.write("Random Number Generated : " + random ); 	
+			var v=document.Luck.Value1.value	
+			if(v==random)
+			{
+				alert("Right On!!!");
+			}
+			else
+			{
+				alert("Better Luck Next Time... the correct answer is" + random);
+			}	 		
+		}
+		
+	</script>
+</head>
+<body>
+	<div> 
+		<form name="Luck">
+			Value1: <input type="Value1" name="Value1"><br/>   
+			<button name="add" type="button" onclick="Randomcheck()">SUbmit</button>
+		</form>
+ 	</div>
+</body>
+</html>

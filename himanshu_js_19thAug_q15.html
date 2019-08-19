@@ -1,0 +1,28 @@
+<!doctype html>
+  <html>
+  <head>
+  <meta charset="UTF-8">
+  <title>HIGHLIGHTING BOLD ELEMENTS</title>
+  <script type="text/javascript">
+  	var bold_Items;
+	window.onload = getBold_items();
+ 
+		function getBold_items() 
+		{
+ 		 bold_Items = document.getElementsByTagName('b'); 
+		} 
+		function highlight() 
+		{
+  		 for (var i=0; i<bold_Items.length; i++)
+  		 {                                                    
+   			 bold_Items[i].style.color = "green";
+   		 }
+		}
+
+  </script>
+  </head>
+  <body>  
+<p><b>We</b> have completed our <b>ftt</b> and <b>gbc</b> Examinations</p>
+<button onclick="highlight()">HighLight</button>
+  </body>
+  <html>

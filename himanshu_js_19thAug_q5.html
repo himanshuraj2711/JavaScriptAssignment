@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>accepts a string as a parameter and find the longest word within the string.</title>
+    <script type="text/javascript">
+        
+        function StringLong(){
+            var s1=document.Convert.value1.value;
+            var s2 = s1.split(" ");
+            var long = 0;
+
+           for(var i = 0; i < s2.length; i++){
+            if(s2[i].length > long){ 
+            long = s2[i].length;   
+            }
+           }
+    for(var j=0;j<s2.length;j++){
+
+        if(s2[j].length==long){
+            alert(s2[j]);
+        }
+    }
+
+        
+    }
+    </script>
+</head>
+<body>
+        <form name="Convert">
+            ENTER STRING: <input type="text" name="value1"><br/>   
+            <button name="on_submit" type="button" onclick="StringLong()">SUBMIT</button>
+        </form>
+</body>
+</html>
