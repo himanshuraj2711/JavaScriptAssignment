@@ -1,5 +1,7 @@
 //finds the not repeating character in a passed in string.
 
+//finds the not repeating character in a passed in string.
+
 function RepeatedChar(str) {
   var arra1 = str.split('');
   var result = '';
@@ -17,9 +19,8 @@ function RepeatedChar(str) {
  
     if (flag < 2) {
       result = arra1[i];
-      break;
+      console.log(result);
     }
   }
-  return result;
 }
-console.log(RepeatedChar('himanshu'));
+console.log(RepeatedChar('raja'));
