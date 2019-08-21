@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disable the combo dropdown on click of an option</title>
+<script type="text/javascript">
+function makeDisable(){
+    var x=document.getElementById("mySelect")
+    x.disabled=true
+}
+function makeEnable(){
+    var x=document.getElementById("mySelect")
+    x.disabled=false
+}
+</script>
+</head>
+
+<body>
+<form>
+<select id="mySelect">
+  <option>HImanshu</option>
+  <option>AYUSH</option>
+  <option>AADARSH</option>
+</select>
+<input type="button" onclick="makeDisable()" value="Disable list">
+<input type="button" onclick="makeEnable()" value="Enable list">
+</form>
+</body>
+
+</html>
